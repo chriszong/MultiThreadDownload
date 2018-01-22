@@ -254,7 +254,7 @@ public class DownloaderImpl implements Downloader, ConnectTask.OnConnectListener
                 final long start = average * i;
                 final long end;
                 if (i == threadNum - 1) {
-                    end = length;
+                    end = length - 1;
                 } else {
                     end = start + average - 1;
                 }
